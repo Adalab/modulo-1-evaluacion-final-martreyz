@@ -1,5 +1,6 @@
 .main__sectionOne {
   height: 376px;
+  width: 100%;
   padding: 30px 15px 45px 15px;
   @media all and (min-width: 768px) {
     padding: 30px 39px 60px 39px;
@@ -54,6 +55,7 @@
 
 .main__sectionTwo {
   background-color: $color-tertiary;
+  width: 100%;
   height: 624px;
   padding: 30px 15px 60px 15px;
   display: grid;
