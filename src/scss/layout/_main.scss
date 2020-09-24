@@ -39,18 +39,41 @@
   &--button {
     display: inline-block;
     height: 45px;
-    padding: 0px 25px 0px 26px;
+    padding: 0px 23px 0px 24px;
     border-radius: 22.5px;
     border: 2px solid $color-secondary;
-    text-decoration: none;
-    color: $color-secondary;
-    font-weight: 500;
-    line-height: 2.25;
+    color: $fontColor-orange;
     @media all and (min-width: 768px) {
       padding: 0px 33.5px 0px 33.5px;
     }
     @media all and (min-width: 1200px) {
       padding: 0px 68px 0px 67px;
     }
+  }
+}
+
+.main__sectionTwo {
+  background-color: $color-tertiary;
+  height: 624px;
+  padding: 30px 15px 60px 15px;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 5;
+  &--title {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+    grid-row: 1/2;
+  }
+  &--button {
+    display: block;
+    height: 45px;
+    background: $color-secondary;
+    padding: 0px 28.5px 0px 27.5px;
+    border-radius: 22.5px;
+    border: 2px solid $color-secondary;
+    color: $fontColor-white;
+    margin: 45px 53px 0px 53px;
+    grid-row: 5/6;
   }
 }

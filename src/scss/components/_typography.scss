@@ -31,3 +31,16 @@
     line-height: 1.5;
   }
 }
+
+.text__button {
+  text-decoration: none;
+  font-family: $fontFamily;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
+  // Variable color, to be set individually
+}
