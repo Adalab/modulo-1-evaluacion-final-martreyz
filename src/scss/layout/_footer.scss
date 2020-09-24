@@ -6,6 +6,16 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  @media all and (min-width: 768px) {
+    padding: 45px 39px;
+    height: 240px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 45px 370px;
+  }
   &__arrow {
     display: block;
     padding: 11px 12px 10px 12px;
@@ -28,6 +38,13 @@
     color: $fontColor-white;
     order: 1;
     margin-top: 30px;
+    @media all and (min-width: 768px) {
+      text-align: left;
+      order: 0;
+      width: 33%;
+      margin-right: 30px;
+      margin-top: 0px;
+    }
     &--deco {
       color: $color-secondary;
       height: 14px;
@@ -37,6 +54,10 @@
   &__menuTwo {
     text-align: center;
     text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      text-align: left;
+      width: 33%;
+    }
     &--item {
       list-style-type: none;
     }
@@ -55,5 +76,8 @@
   }
   &__menuOne {
     margin-bottom: 30px;
+    @media all and (min-width: 768px) {
+      margin-right: 30px;
+    }
   }
 }
