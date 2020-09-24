@@ -11,7 +11,7 @@
   }
   &--minititle {
     color: $fontColor-blue;
-    font-family: "Roboto", sans-serif;
+    font-family: $fontFamily;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -91,6 +91,7 @@
     border: 2px solid $color-secondary;
     color: $fontColor-white;
     grid-row: 5/6;
+    text-transform: capitalize;
     @media all and (min-width: 768px) {
       grid-column: 1/4;
       grid-row: 3/4;
