@@ -1,0 +1,56 @@
+.footer {
+  height: 465px;
+  background: $color-primary;
+  padding: 60px 0px 45px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &__arrow {
+    display: block;
+    padding: 11px 12px 10px 12px;
+    background-image: url(../images/ico-arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -22.5px;
+    box-shadow: 0 2px 4px 0 $color-dark;
+  }
+  &__small {
+    font-family: $fontFamily;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: $fontColor-white;
+    order: 1;
+    margin-top: 30px;
+    &--deco {
+      color: $color-secondary;
+      height: 14px;
+    }
+  }
+  &__menuOne,
+  &__menuTwo {
+    text-align: center;
+    text-transform: uppercase;
+    &--item {
+      list-style-type: none;
+      text-decoration: none;
+      color: $fontColor-white;
+      font-family: $fontFamily;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.88;
+      letter-spacing: normal;
+    }
+  }
+  &__menuOne {
+    margin-bottom: 30px;
+  }
+}
