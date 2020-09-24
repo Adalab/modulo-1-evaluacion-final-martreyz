@@ -1,0 +1,38 @@
+.main__sectionOne {
+  height: 376px;
+  padding: 30px 15px 45px 15px;
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px 39px;
+  }
+  &--minititle {
+    color: $color-tertiary;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.14;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+  }
+  &--title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+  &--text {
+    color: $fontColor-light;
+    margin-bottom: 30px;
+  }
+  &--button {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-secondary;
+    height: 45px;
+    font-weight: 500;
+    border-radius: 22.5px;
+    border: 2px solid $color-secondary;
+    padding: 0px 25px 0px 26px;
+    line-height: 2.25;
+  }
+}
