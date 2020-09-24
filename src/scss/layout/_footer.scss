@@ -39,6 +39,8 @@
     text-transform: uppercase;
     &--item {
       list-style-type: none;
+    }
+    &--aitem {
       text-decoration: none;
       color: $fontColor-white;
       font-family: $fontFamily;
@@ -48,6 +50,7 @@
       font-style: normal;
       line-height: 1.88;
       letter-spacing: normal;
+      padding: 10px;
     }
   }
   &__menuOne {
