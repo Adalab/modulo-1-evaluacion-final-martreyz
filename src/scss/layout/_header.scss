@@ -67,16 +67,13 @@
   }
   &__arrow {
     z-index: 999;
-    text-align: center;
     margin-bottom: 75.5px;
+    padding: 18px 13px 15.3px;
     @media all and (min-width: 768px) {
       margin-bottom: 45px;
     }
     @media all and (min-width: 1200px) {
       margin-bottom: 13px;
-    }
-    &--img {
-      vertical-align: -100%;
     }
   }
 }
