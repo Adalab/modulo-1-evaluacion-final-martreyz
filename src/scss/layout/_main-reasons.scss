@@ -1,0 +1,44 @@
+.main__sectionTwo--card {
+  margin: 0px 55px 0px 55px;
+  text-align: center;
+  &1 {
+    grid-row: 2/3;
+  }
+  &2 {
+    grid-row: 3/4;
+  }
+  &3 {
+    grid-row: 4/5;
+  }
+  @media all and (min-width: 768px) {
+    margin: 0px 0px 0px 0px;
+    grid-row: 2/3;
+    &1 {
+      grid-column: 1/2;
+    }
+    &2 {
+      grid-column: 2/3;
+    }
+    &3 {
+      grid-column: 3/4;
+    }
+  }
+}
+
+.main__sectionTwo--minititle {
+  font-size: 18px;
+  line-height: 1.67;
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+}
+
+.main__sectionTwo--text {
+  color: $fontColor-dark;
+  margin-bottom: 45px;
+  @media all and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
