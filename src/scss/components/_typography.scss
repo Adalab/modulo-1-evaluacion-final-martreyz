@@ -7,6 +7,14 @@
   line-height: 1.25;
   letter-spacing: normal;
   color: $fontColor-dark;
+  @media all and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.73;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 32px;
+    line-height: 1.41;
+  }
 }
 
 .text__main {
@@ -17,4 +25,9 @@
   font-style: normal;
   line-height: 1.67;
   letter-spacing: normal;
+  // Variable color, to be set separately
+  @media all and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 }

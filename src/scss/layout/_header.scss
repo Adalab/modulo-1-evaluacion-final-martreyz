@@ -5,7 +5,8 @@
   height: 100vh;
   justify-content: flex-end;
   align-items: center;
-
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
   &__menu {
     width: 44px;
     height: 44px;
@@ -15,14 +16,10 @@
     position: fixed;
     top: 0px;
     left: 0px;
-  }
-  &__hero {
-    width: 100%;
-    min-height: 568px;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    top: 0px;
+    background-image: url(../images/bars-solid.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px 16px;
   }
   &__title {
     font-family: $fontFamily-titles;
@@ -69,6 +66,9 @@
     z-index: 999;
     margin-bottom: 75.5px;
     padding: 18px 13px 15.3px;
+    background-image: url(../images/ico-scroll-down.svg);
+    background-position: center;
+    background-repeat: no-repeat;
     @media all and (min-width: 768px) {
       margin-bottom: 45px;
     }
