@@ -1,14 +1,22 @@
+// Styles applying to footer partial
+
+// Keyframe for arrow button redirecting upwards
+
 @keyframes rolling {
   0% {
     top: -22.5px;
   }
   50% {
-    top: -30px;
+    top: -40px;
+    transform: scale(1.2);
+    opacity: 0.5;
   }
   100% {
     top: -22.5px;
   }
 }
+
+// Styles
 
 .footer {
   height: 465px;
@@ -39,11 +47,14 @@
     top: -22.5px;
     box-shadow: 0 2px 4px 0 $color-dark;
     animation-name: rolling;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
     animation-timing-function: linear;
-    &:hover {
-      animation-play-state: paused;
+    @media all and (min-width: 1200px) {
+      animation-iteration-count: infinite;
+      &:hover {
+        animation-play-state: paused;
+      }
     }
   }
   &__small {
@@ -55,6 +66,7 @@
     line-height: 2.14;
     letter-spacing: normal;
     text-align: center;
+    text-transform: lowercase;
     color: $fontColor-white;
     order: 1;
     margin-top: 30px;
