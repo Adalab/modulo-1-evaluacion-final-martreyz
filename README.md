@@ -15,20 +15,20 @@ El desarrollo del ejercicio se ha llevado a cabo utilizando el [Adalab Starter K
 
 - Header de la página, maquetado con Flexbox.
 - Main de la página, dividido en dos secciones:
-  -- Una primera sección maquetada con estilo libre siguiendo un diseño.
-  -- Segunda sección maquetada con Grid.
+  - Una primera sección maquetada con estilo libre siguiendo un diseño.
+  - Segunda sección maquetada con Grid.
 - Footer de la página, maquetado con Flexbox.
 
 - Otros requisitos:
-  -- Enlace de los botones de header y footer para la redirección a partes concretas de la página.
-  -- Transiciones en los botones del main para actuar con :hover.
-  -- Animación en el botón del footer.
+  - Enlace de los botones de header y footer para la redirección a partes concretas de la página.
+  - Transiciones en los botones del main para actuar con :hover.
+  - Animación en el botón del footer.
 
 # Composición del código:
 
 - HTML: Dividido en tres partials base: header, main y footer; estando main subdividido con motivo de repetición del código en la sección 2, a vistas de optimizar el mismo.
 - CSS: Dividido en partials:
-  -- Components: Contiene los partials referentes a estilos de botones y tipografía con carácter repetitivo en el diseño.
-  -- Core: Conotiene los partials referentes a la hoja de Reset y variables de valores con carácter repetitivo en el diseño.
-  -- Layout: Contiene los partials referentes a las particiones HTML, conteniendo los estilos de cada una de ellas.
-  -- Pages: Contiene los partials generales a toda la página.
+  - Components: Contiene los partials referentes a estilos de botones y tipografía con carácter repetitivo en el diseño.
+  - Core: Conotiene los partials referentes a la hoja de Reset y variables de valores con carácter repetitivo en el diseño.
+  - Layout: Contiene los partials referentes a las particiones HTML, conteniendo los estilos de cada una de ellas.
+  - Pages: Contiene los partials generales a toda la página.
