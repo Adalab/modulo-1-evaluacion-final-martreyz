@@ -1,6 +1,6 @@
 // Styles applying to footer partial
 
-// Keyframe for arrow button redirecting upwards
+// Keyframe for arrow button that redirects upwards
 
 @keyframes rolling {
   0% {
@@ -48,7 +48,8 @@
     box-shadow: 0 2px 4px 0 $color-dark;
     animation-name: rolling;
     animation-duration: 2s;
-    animation-iteration-count: 10;
+    animation-delay: 10s;
+    animation-iteration-count: 15;
     animation-timing-function: linear;
     @media all and (min-width: 1200px) {
       animation-iteration-count: infinite;
