@@ -52,6 +52,7 @@
     animation-iteration-count: 15;
     animation-timing-function: linear;
     @media all and (min-width: 1200px) {
+      animation-delay: 0s;
       animation-iteration-count: infinite;
       &:hover {
         animation-play-state: paused;
