@@ -67,42 +67,44 @@
   width: 100%;
   height: 624px;
   padding: 30px 15px 60px 15px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  text-align: center;
   @media all and (min-width: 768px) {
     height: 397px;
     padding: 30px 40px 60px 38px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 27.7px;
-    grid-template-rows: auto;
   }
   @media all and (min-width: 1200px) {
     padding: 60px 85px 60px 81.2px;
-    grid-column-gap: 26.2px;
     height: 427px;
   }
   &--title {
-    text-align: center;
     text-transform: capitalize;
+  }
+  &--container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     margin-bottom: 45px;
-    grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row-gap: 45px;
+
     @media all and (min-width: 768px) {
-      grid-column: 1/4;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 27.7px;
+      grid-template-rows: auto;
+      margin-bottom: 60px;
+    }
+    @media all and (min-width: 1200px) {
+      grid-column-gap: 26.2px;
     }
   }
+
   &--button {
-    display: block;
+    display: inline-block;
     height: 45px;
-    justify-self: center;
     background: $color-secondary;
     padding: 0px 28.5px 0px 27.5px;
     border-radius: 22.5px;
     border: 2px solid $color-secondary;
     color: $fontColor-white;
-    grid-column: 1/2;
-    grid-row: 5/6;
     text-transform: capitalize;
     transition: ease-in 0.5s color, ease-in 0.5s background-color,
       ease-in 0.5s transform;
@@ -112,8 +114,6 @@
       transform: scale(1.1);
     }
     @media all and (min-width: 768px) {
-      grid-column: 1/4;
-      grid-row: 3/4;
       padding: 0px 40.5px 0px 41.5px;
     }
     @media all and (min-width: 1200px) {
